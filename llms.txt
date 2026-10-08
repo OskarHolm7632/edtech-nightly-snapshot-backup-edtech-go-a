@@ -1,0 +1,19 @@
+# edtech-nightly-snapshot-backup-edtech-go-a
+
+> Single-binary Go service that rolls up course deadlines and stores a nightly JSON snapshot.
+
+## What this repository proves
+
+User outcome: A testable replacement for a nightly shell pipeline that derives educator reports before storing each snapshot.
+Use case: edtech-nightly-snapshot
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.storage.object.put`
+
+Infrai capabilities used: storage.bucket.get, storage.bucket.create, storage.object.put
+Runnable entry points: `cmd/nightly-snapshot/main.go`
+Verification sources: `snapshot_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

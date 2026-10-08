@@ -1,0 +1,11 @@
+{
+  "courses": [
+    {"course_id": "go-101", "title": "Go for Services", "educator_id": "teacher-7", "published": true}
+  ],
+  "deadlines": [
+    {"learner_id": "learner-12", "course_id": "go-101", "due_at": "2026-09-28T09:00:00Z", "completed": false}
+  ],
+  "educators": [
+    {"id": "teacher-7", "name": "Ada"}
+  ]
+}
